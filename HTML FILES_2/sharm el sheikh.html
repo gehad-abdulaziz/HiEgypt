@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Theme Two Sharm</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Boxicons for the icons used -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS FILES_2/style.css" />
+    <link rel="stylesheet" href="../CSS FILES_2/hotels_filter.css" />
+
+</head>
+<body>
+ <!-- navbar -->
+ <nav class="navbar">
+	<div class="logo_item">
+	  <i class="bx bx-menu" id="sidebarOpen"></i>
+	  <img src="../images/LOGO.png" alt=""></i>HI EGYPT
+	</div>
+
+
+
+	<div class="navbar_content">
+	  
+	  <a href="registration.html" class="login_link">Login</a>
+
+	</div>
+	<a class="theme1-change" href="../html files/sharm el sheikh.html">
+	  <button class="theme1-button">Theme1</button>
+  </a>
+  </nav>
+
+  <!-- sidebar -->
+  <nav class="sidebar">
+	<div class="menu_content">
+	  <ul class="menu_items">
+		<div class="menu_title menu_Main"></div>
+		
+		
+		<li class="item">
+		  <div href="#" class="nav_link submenu_item">
+			<span class="navlink_icon">
+			  <i class="bx bx-home-alt"></i>
+			</span>
+			<span class="navlink">Pages</span>
+			<i class="bx bx-chevron-right arrow-left"></i>
+		  </div>
+
+		  <ul class="menu_items submenu">
+			<a href="../index_2.html" class="nav_link sublink">Home page</a>
+			<a href="places.html" class="nav_link sublink">where To Go</a>
+			<a href="hotels.html" class="nav_link sublink">Hotels</a>
+			<a href="resturants.html" class="nav_link sublink">Restaurants </a>
+			<a href="transportation.html" class="nav_link sublink">Transportation</a>
+			<a href="store.html" class="nav_link sublink">Shop Store</a>
+			<a href="feedback.html" class="nav_link sublink">feedback</a>
+		  </ul>
+		</li>
+		
+
+
+	  </ul>
+
+	  <ul class="menu_items">
+		<div class="menu_title menu_Need-help"></div>
+		
+		
+		<li class="item">
+		  <a href="FAQ.html" class="nav_link">
+			<span class="navlink_icon">
+			  <i class="faq-icon bx bx-question-mark"></i>
+			</span>
+			<span class="navlink">FAQ</span>
+		  </a>
+		</li>
+		
+		<li class="item">
+		  <a href="contact us.html" class="nav_link">
+			<span class="navlink_icon">
+			  <i class="contact-icon bx bx-envelope"></i>
+			</span>
+			<span class="navlink">Contact us</span>
+		  </a>
+		</li>
+	  </ul>
+	  <ul class="menu_items">
+		<div class="menu_title menu_Follow"></div>
+		<li class="item">
+		  <a href="https://www.facebook.com/" class="nav_link">
+			<span class="navlink_icon">
+			  <i class="facebook-icon bx bxl-facebook"></i>
+			</span>
+			<span class="navlink">facebook</span>
+		  </a>
+		</li>
+		<li class="item">
+		  <a href="https://www.instagram.com/" class="nav_link">
+			<span class="navlink_icon">
+			  <i class="instagram-icon bx bxl-instagram"></i>
+			</span>
+			<span class="navlink">instagram</span>
+		  </a>
+		</li>
+		<li class="item">
+		  <a href="https://web.whatsapp.com/" class="nav_link">
+			<span class="navlink_icon">
+			  <i class="whatsapp-icon bx bxl-whatsapp"></i>
+			</span>
+			<span class="navlink">WhatsApp</span>
+		  </a>
+		</li>
+		<li class="item">
+		  <a href="https://github.com/" class="nav_link">
+			<span class="navlink_icon">
+			  <i class="github-icon bx bxl-github"></i>
+			</span>
+			<span class="navlink">GitHub</span>
+		  </a>
+		</li>
+	  </ul>
+
+
+	</div>
+  </nav>
+  <main class="THE-BODY-CONTENT">
+<main>
+	<section class="hero" id="home" style="background-image: url('../images/Sharm\ bg.jpg');">
+        <div class="container">
+			<h2 class="h1 hero-title" style="margin-left: 130px;">Explore Sharm El Sheikh</h2>
+			<div class="btn-group">
+			<a href="#header" class="btn btn-primary">Check now</a>
+		</div>
+		
+        </div>
+      </section>
+
+	  <header id="header">
+		<ul class="indicator">
+        <div class="filter-condition">
+            <span>View As a</span>
+            <select name="" id="select">
+                <option value="Default">Default</option>
+                <option value="LowToHigh">Low to high</option>
+                <option value="HighToLow">High to low</option>
+            </select>
+        </div>
+    </header>
+    <div class="product-field">
+        <ul class="items">
+			<li data-category="Hotel"  data-price="$350">
+                <picture>
+                    <img src="../images/sharm 1.jpg" >
+                </picture>
+                <div class="detail">
+                    <strong>Hotel</strong>
+                    <span>Four Seasons Resort , 4.4 stars,Lnaguages spoken: English, Arabic</span>
+						<a href="https://www.fourseasons.com/"><small>Website</small></a>
+					</div>
+                <h4>$350</h4>
+            </li>
+
+			<li data-category="Hotel" data-price="$270">
+				<picture>
+					<img src="../images/sharm 2.jpg" >
+				</picture>
+				<div class="detail">
+					<strong>Hotel</strong>
+					<span>Rixos Premium Seagate, 4.6 stars,Languages spoken: English, Arabic</span>
+					<a href="https://allinclusive-collection.com/en/"><small>Website</small></a>
+				</div>
+				<h4>$270</h4>
+			</li>
+
+			<!--****************************Youth hostels*********************************** --> 
+
+			<li data-category="Youth Hostel" data-price="120">
+				<picture>
+					<img src="../images/sharm 3.jpg">
+				</picture>
+				<div class="detail">
+					<strong>Resort</strong>
+					<span>Halomy Sharm Resort, 4.2 stars, Languages spoken: English, Arabic</span>
+					<a href="https://www.booking.com/hotel/eg/halomy-sharm-resort.fr.html?aid=356980&label=gog235jc-1DCAsoQ0ITaGFsb215LXNoYXJtLXJlc29ydEgzWANoQ4gBAZgBDbgBF8gBDNgBA-gBAYgCAagCA7gC64XxsAbAAgHSAiRjN2Y2NjQxMS05NzkyLTRiN2YtYmExMy00OGVlYWI3NDQyNjjYAgTgAgE&sid=d11c9969f8f3db7579b5a66ec4c20503&dist=0&group_adults=2&group_children=0&keep_landing=1&no_rooms=1&sb_price_type=total&type=total&"><small>More info</small></a>
+				</div>
+				<h4>$120</h4>
+			</li>
+
+			<li data-category="Youth Hostel" data-price="$140">
+				<picture>
+					<img src="../images/sharm 4.jpg">
+				</picture>
+				<div class="detail">
+					<strong> Lodge </strong>
+					<span>Serenity Lodge, 4.2 stars, Languages spoken: English, Arabic</span>
+					<a href="https://www.facebook.com/AdrenalinBeachLodge/"><small>More info</small></a>
+				</div>
+				<h4>$140</h4>
+			</li>
+
+		</ul>
+    </div>
+</main>
+</main>
+
+<footer>
+  <div class="footer">
+  <div class="row">
+  <a href="https://web.whatsapp.com/"><i class="whatsapp-icon bx bxl-whatsapp"></i></a>
+  <a href="https://www.facebook.com/"><i class="facebook-icon bx bxl-facebook"></i></a>
+  <a href="https://github.com/"><i class="github-icon bx bxl-github"></i></a>
+  <a href="https://www.instagram.com/"><i class="instagram-icon bx bxl-instagram"></i></a>
+  </div>
+  
+  <div class="row">
+  <ul>
+  <li><a href="contact us.html">Contact us</a></li>
+  <li><a href="../index_2.html">Home page </a></li>
+  <li><a href="FAQ.html">FAQ</a></li>
+  <li><a href="store.html">Shop NOW!</a></li>
+  </ul>
+  </div>
+  
+  <div class="row">
+   Copyright © 2024 FCAI-HU - All rights reserved || Designed By: HI EGYPT team 
+  </div>
+  </div>
+  </footer>
+
+<!-- JavaScript -->
+<script src="../JAVA FILES_2/script.js"></script>
+
+
+<script type="text/javascript" src="../javascript files/Hotel_info.js"></script>
+</body>
+</html>

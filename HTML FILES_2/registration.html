@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Boxicons for the icons used -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+   
+    <title>Login</title>
+    <link rel="stylesheet" href="../CSS FILES_2/style.css" />
+    <link rel="stylesheet" href="../CSS FILES_2/registration.css" />
+
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="logo_item">
+        <i class="bx bx-menu" id="sidebarOpen"></i>
+        <img src="../images/LOGO.png" alt=""></i>HI EGYPT
+      </div>
+
+   
+
+      <div class="navbar_content">
+        
+        <a href="registration.html" class="login_link">Login</a>
+
+      </div>
+      <a class="theme1-change" href="../html files/registration.html">
+        <button class="theme1-button">Theme1</button>
+    </a>
+    </nav>
+
+    <!-- sidebar -->
+    <nav class="sidebar">
+      <div class="menu_content">
+        <ul class="menu_items">
+          <div class="menu_title menu_Main"></div>
+          
+          
+          <li class="item">
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="bx bx-home-alt"></i>
+              </span>
+              <span class="navlink">Pages</span>
+              <i class="bx bx-chevron-right arrow-left"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <a href="../index_2.html" class="nav_link sublink">Home page</a>
+              <a href="places.html" class="nav_link sublink">where To Go</a>
+              <a href="hotels.html" class="nav_link sublink">Hotels</a>
+              <a href="resturants.html" class="nav_link sublink">Restaurants </a>
+              <a href="transportation.html" class="nav_link sublink">Transportation</a>
+              <a href="store.html" class="nav_link sublink">Shop Store</a>
+              <a href="feedback.html" class="nav_link sublink">feedback</a>
+            </ul>
+          </li>
+          
+
+
+        </ul>
+
+        <ul class="menu_items">
+          <div class="menu_title menu_Need-help"></div>
+          
+          
+          <li class="item">
+            <a href="FAQ.html" class="nav_link">
+              <span class="navlink_icon">
+                <i class="faq-icon bx bx-question-mark"></i>
+              </span>
+              <span class="navlink">FAQ</span>
+            </a>
+          </li>
+          
+          <li class="item">
+            <a href="contact us.html" class="nav_link">
+              <span class="navlink_icon">
+                <i class="contact-icon bx bx-envelope"></i>
+              </span>
+              <span class="navlink">Contact us</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="menu_items">
+          <div class="menu_title menu_Follow"></div>
+          <li class="item">
+            <a href="https://www.facebook.com/" class="nav_link">
+              <span class="navlink_icon">
+                <i class="facebook-icon bx bxl-facebook"></i>
+              </span>
+              <span class="navlink">facebook</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="https://www.instagram.com/" class="nav_link">
+              <span class="navlink_icon">
+                <i class="instagram-icon bx bxl-instagram"></i>
+              </span>
+              <span class="navlink">instagram</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="https://web.whatsapp.com/" class="nav_link">
+              <span class="navlink_icon">
+                <i class="whatsapp-icon bx bxl-whatsapp"></i>
+              </span>
+              <span class="navlink">WhatsApp</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="https://github.com/" class="nav_link">
+              <span class="navlink_icon">
+                <i class="github-icon bx bxl-github"></i>
+              </span>
+              <span class="navlink">GitHub</span>
+            </a>
+          </li>
+        </ul>
+
+
+      </div>
+    </nav>
+    <main class="THE-BODY-CONTENT">
+   
+      <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+                <button type="button" class="toggle-btn" onclick="Signup()">Register</button>
+            </div>
+
+            <form id="login" class="input-group" onsubmit="return validateLogin()">
+                <input type="email" class="input-field" placeholder="Enter your Email" required id="login-email">
+                <input type="password" class="input-field" placeholder="Enter your password" required id="login-password">
+                <button type="submit" class="submit-btn">Log in</button>
+            </form>
+
+            <form id="Signup" class="input-group" onsubmit="return validateSignup()">
+                <input type="text" class="input-field" placeholder="Enter your Name" required>
+                <input type="email" class="input-field" placeholder="Enter your Email" required id="signup-email">
+                <input type="password" class="input-field" placeholder="Enter your password" required id="signup-password">
+                <button type="submit" class="submit-btn" id="submit">Sign up</button>
+            </form>
+
+            <div id="message"></div>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+      <div class="row">
+      <a href="https://web.whatsapp.com/"><i class="whatsapp-icon bx bxl-whatsapp"></i></a>
+      <a href="https://www.facebook.com/"><i class="facebook-icon bx bxl-facebook"></i></a>
+      <a href="https://github.com/"><i class="github-icon bx bxl-github"></i></a>
+      <a href="https://www.instagram.com/"><i class="instagram-icon bx bxl-instagram"></i></a>
+      </div>
+      
+      <div class="row">
+      <ul>
+      <li><a href="contact us.html">Contact us</a></li>
+      <li><a href="../index_2.html">Home page </a></li>
+      <li><a href="FAQ.html">FAQ</a></li>
+      <li><a href="store.html">Shop NOW!</a></li>
+      </ul>
+      </div>
+      
+      <div class="row">
+       Copyright © 2024 FCAI-HU - All rights reserved || Designed By: HI EGYPT team 
+      </div>
+      </div>
+      </footer>
+
+    <!-- JavaScript -->
+    <script src="../JAVA FILES_2/script.js"></script>
+    <script src="../javascript files/registration.js"></script>
+
+
+
+  </body>
+</html>

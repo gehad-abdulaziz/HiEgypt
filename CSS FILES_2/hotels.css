@@ -1,0 +1,580 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/************************************************* navbar edits ******************************************************************/
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  background-color: #ffffff; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.THE-BODY-CONTENT {
+  position: relative;
+  z-index: 1; 
+  margin-top: 80px; 
+  margin-left: 240px; 
+}
+
+.footer{
+  margin-left: 0px; 
+
+}
+
+body {
+    margin: 0; 
+}
+/************************************************Content ******************************************************************/
+
+.background {
+  background-image: url('../images/hotel\ info.avif');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: 0;
+  width: 100%;
+  z-index: 1; 
+  min-height: 100vh;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.25); 
+}
+
+.here {
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 10px 20px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.content {
+  margin-top: 0; 
+  z-index: 1;
+  border: 2px solid white; 
+  padding: 20px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+.background h2, p {
+  font-size: 3rem;
+  color: #fff;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-weight: 700;
+}
+
+.background p {
+  font-size: 0.7rem;
+  letter-spacing: 1ex;
+  margin-top: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.read-more {
+  margin-top: 10px;
+  padding: 5px 15px;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold; 
+  cursor: pointer;
+  border-radius: 30px; 
+  display: inline-block; 
+  transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #b37718; 
+}
+
+.white-section {
+  padding: 50px 10px; 
+}
+
+.content1 {
+  padding: 2;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+.text-section {
+  margin-top: 100;
+  margin-left: 10;
+  padding-right: 20px; 
+
+}
+
+.text-section p {
+  letter-spacing: 2;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 0.8rem; 
+  font-weight: 100;
+  color: #878787ae;
+  margin-top: 20px; 
+}
+
+
+.text-section h2 {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 2.2rem; 
+    color: #2a4851;
+    margin-top: 0px; 
+}
+
+.text-section h4 {
+  font-size: 1.3rem; 
+  font-weight: 1;
+  color: #BC6C25;
+  margin-top: 10px; 
+}
+
+.text-section h5 {
+  font-size: 1.5rem; 
+  font-weight: 100;
+  color: #dda15e;
+  font-family: Cedarville Cursive;
+  margin-top: 10px; 
+}
+.text-section p {
+  letter-spacing: 2px;
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 100;
+  color: #BC6C25;
+  margin-top: 20px;
+}
+
+.text-section h2 {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 2.2rem;
+  color: #BC6C25;
+  margin-top: 0px;
+}
+.video-section {
+flex-shrink: 0;
+width: 40%; 
+margin-left: auto;
+border-radius: 25px;
+overflow: hidden;
+}
+
+.video-section video {
+width: 100%;
+height: 350px; 
+border-radius: 25px;
+object-fit: cover;
+}
+@media screen and (max-width: 767px) {
+.content {
+    flex-direction: column;
+}
+
+.text-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.video-section {
+    width: 100%;
+}
+
+.video-section video {
+    width: 100%;
+    height: auto;
+}
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title h1 {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 40px;
+  color: #BC6C25;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.title p {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 16px;
+  color: #dda15e;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.services-section {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+.card {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #3f5266;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  color: #222; 
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: #e99815;
+}
+
+.card:hover h2,
+.card:hover p {
+  color: white; 
+}
+
+.card .icon {
+  font-size: 45px;
+  margin-bottom: 25px;
+  color: #BC6C25;
+}
+
+.card h2 {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 22px;
+  color: #ca6608;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-size: 16px;
+  font-family: 'Noto Sans SC', sans-serif;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  color: #dda15e;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .content1 {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .text-section {
+      margin-top: 20px; 
+      margin-left: 0; 
+      padding-right: 0; 
+      text-align: center; 
+  }
+
+  .photo-section {
+      margin-top: 20px; 
+      width: fit-content;
+
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+}
+
+.title-section {
+  font-size: 35px;
+  text-align: center;
+  font-weight: bold;
+  color: #333333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.home-box-2 {
+  width: calc(24% - 10px);
+  margin-right: 20px;
+  background-color: #ffffff;
+  margin:10;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  float: left;
+}
+
+.home-box-2:hover {
+  transform: translateY(-5px);
+}
+
+.home-box-2 img {
+  width: 100%;
+  height: 260px;
+  border-radius: 10px 10px 0 0;
+}
+
+.home-box-2 h3 {
+  font-size: 18px;
+  color: #333333;
+  margin: 10px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.home-box-2 p {
+  font-size: 12px;
+  color: #666666;
+  margin: 0;
+}
+
+.home-box-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  text-align: center; 
+}
+
+.home-box-2-description {
+  font-size: 14px; 
+  color: #666666; 
+  margin-top: 5px; 
+}
+
+.home-box-2 h3 {
+  font-size: 18px;
+  font-family: 'Noto Sans SC', sans-serif;
+  color: #333333;
+  margin: 10px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.home-box-2 p {
+  font-size: 12px; 
+  color: #666666;
+  margin: 0;
+}
+
+
+.home-box-container {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 0 10px; 
+}
+
+.home-box-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px; 
+
+}
+.home-box-container {
+  font-family: 'Noto Sans SC', sans-serif;
+  color: #333333;
+  
+}
+
+.home-box-2-icon {
+  font-size: 16px; 
+  margin: 0 5px;
+  text-decoration: none; 
+}
+
+.border-right {
+  border-right: 1px solid #cccccc;
+}
+
+.border-left {
+  border-left: 1px solid #cccccc;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 992px) {
+  .home-box-2 {
+    width: calc(50% - 20px); 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-box-2 {
+    width: calc(50% - 20px); 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home-box-2 {
+    width: 100%; 
+    margin-right: 0; 
+    margin-bottom: 20px;
+  }
+}
+
+.container {
+    flex: 1;
+}
+.table-section {
+  margin-top: 30px;
+  padding: 50px 0;
+  background-color: #e0a969;
+  color: #333; 
+  font-family: 'Poppins', sans-serif;
+}
+
+.table-wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(245, 200, 0, 0.329);
+  margin-top: 30px;
+}
+
+.table-section h2 {
+  text-align: center;
+  color: #333; 
+}
+
+table th,
+table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #9c9b5d;
+  color: #333; 
+}
+
+table th {
+  background-color: #e9a65a;
+  font-weight: bold;
+  color: #333; 
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f3bc7e;
+}
+
+table tbody tr:hover {
+  background-color: #cc9b64;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  max-width: 1100px; 
+  height: 500px; 
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease; 
+
+}
+
+.iframe-container:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+}
+
+.iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+.iframe-title {
+  font-size: 34px;
+  font-weight: bold;
+  color: #BC6C25;
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-family: 'Arial', sans-serif;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+
+.custom-background {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.newsletter-container {
+    margin: 15px auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://www.shutterstock.com/image-vector/airplane-line-vector-icon-air-260nw-1176516769.jpg');
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-container h1 {
+    font-family: 'Noto Sans SC', sans-serif;
+    letter-spacing: 1px;
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.button-link {
+    padding: 12px 24px;
+    border: none;
+    background-color: #BC6C25;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: #dda15e; 
+}

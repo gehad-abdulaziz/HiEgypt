@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Boxicons for the icons used -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+   
+    <title>The shop store</title>
+    <link rel="stylesheet" href="../CSS FILES_2/store.css" />
+    <link rel="stylesheet" href="../CSS FILES_2/style.css" />
+
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="logo_item">
+        <i class="bx bx-menu" id="sidebarOpen"></i>
+        <img src="../images/LOGO.png" alt=""></i>HI EGYPT
+      </div>
+
+ 
+      <div class="navbar_content">
+        
+        <a href="registration.html" class="login_link">Login</a>
+
+      </div>
+      <a class="theme1-change" href="../html files/store.html">
+        <button class="theme1-button">Theme1</button>
+    </a>
+    </nav>
+
+    <!-- sidebar -->
+    <nav class="sidebar">
+      <div class="menu_content">
+        <ul class="menu_items">
+          <div class="menu_title menu_Main"></div>
+          
+          
+          <li class="item">
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="bx bx-home-alt"></i>
+              </span>
+              <span class="navlink">Pages</span>
+              <i class="bx bx-chevron-right arrow-left"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <a href="../index_2.html" class="nav_link sublink">Home page</a>
+              <a href="places.html" class="nav_link sublink">where To Go</a>
+              <a href="hotels.html" class="nav_link sublink">Hotels</a>
+              <a href="resturants.html" class="nav_link sublink">Restaurants </a>
+              <a href="transportation.html" class="nav_link sublink">Transportation</a>
+              <a href="store.html" class="nav_link sublink">Shop Store</a>
+              <a href="feedback.html" class="nav_link sublink">feedback</a>
+            </ul>
+          </li>
+          
+
+
+        </ul>
+
+        <ul class="menu_items">
+          <div class="menu_title menu_Need-help"></div>
+          
+          
+          <li class="item">
+            <a href="FAQ.html" class="nav_link">
+              <span class="navlink_icon">
+                <i class="faq-icon bx bx-question-mark"></i>
+              </span>
+              <span class="navlink">FAQ</span>
+            </a>
+          </li>
+          
+          <li class="item">
+            <a href="contact us.html" class="nav_link">
+              <span class="navlink_icon">
+                <i class="contact-icon bx bx-envelope"></i>
+              </span>
+              <span class="navlink">Contact us</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="menu_items">
+          <div class="menu_title menu_Follow"></div>
+          <li class="item">
+            <a href="https://www.facebook.com/" class="nav_link">
+              <span class="navlink_icon">
+                <i class="facebook-icon bx bxl-facebook"></i>
+              </span>
+              <span class="navlink">facebook</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="https://www.instagram.com/" class="nav_link">
+              <span class="navlink_icon">
+                <i class="instagram-icon bx bxl-instagram"></i>
+              </span>
+              <span class="navlink">instagram</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="https://web.whatsapp.com/" class="nav_link">
+              <span class="navlink_icon">
+                <i class="whatsapp-icon bx bxl-whatsapp"></i>
+              </span>
+              <span class="navlink">WhatsApp</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="https://github.com/" class="nav_link">
+              <span class="navlink_icon">
+                <i class="github-icon bx bxl-github"></i>
+              </span>
+              <span class="navlink">GitHub</span>
+            </a>
+          </li>
+        </ul>
+
+
+      </div>
+    </nav>
+    <main class="THE-BODY-CONTENT">
+      <!-- the main content -->
+      <section class="content">
+          <h1>Capture memories that last a lifetime</h1>
+          <p>
+              <span style="--i:1">Shop</span>
+              <span style="--i:2">our</span>
+              <span style="--i:3">unique</span>
+              <span style="--i:4">souviners</span>
+              <span style="--i:5">NOW!</span>
+
+
+
+
+
+          </p>
+          <audio controls autoplay>
+            <source src="../images/Discover treasures .mp3" type="audio/mpeg">
+          </audio>
+          <button class="shop-now-btn" onclick="scrollToLatestProducts()">Shop Now</button>
+
+          
+      </section>
+
+      <section class="product-categories">
+        <h2>Product Categories and Availability</h2>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Available Products</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Statue</td>
+                        <td>Tutankhamun Legacy, Isis The God Of Fertility</td>
+                    </tr>
+                    <tr>
+                        <td>Accessories</td>
+                        <td>Key chain, Necklace, Photo frame</td>
+                    </tr>
+                    <tr>
+                        <td>Clothes</td>
+                        <td>Pharaoh Egypt T-Shirt, Pharaoh dress</td>
+                    </tr>
+                    <tr>
+                        <td>Drinkware</td>
+                        <td>Royalty Mug</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+      
+      <h1 id="latestProductsHeading" class="pheading">Our latest products</h1>
+
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for products... (E.g :clothes)">
+    </div>
+
+
+     
+              
+      <section class="sec">
+          <div class="products">
+              <!-- the cards -->
+              <div class="card">
+                  <div class="img"><img src="../images/product 1.png" alt="product 1"></div>
+                  <div class="desc">Statue</div>
+                  <div class="title">Isis The God Of Fertility</div>
+                  <p class="products-desc">
+                      Evoke Egyptian fertility with our exquisite 'Isis Goddess' figurine,
+                       a divine home adornment.
+                  </p>
+                  <div class="box">
+                      <div class="price">290L.E</div>
+                      <button class="btn">BUY NOW</button>
+      
+                  </div>
+              </div>
+              <!-- the cards end -->
+              <!-- the cards -->
+              <div class="card">
+                  <div class="img"><img src="../images/product 2.png" alt="product2"></div>
+                  <div class="desc">Accessories</div>
+                  <div class="title">Key chain</div>
+                  <p class="products-desc">
+                      Elegant and modern Egyptian Pharaonic design key chain
+                       in the shape of Nefertiti (silver-gold).
+                  </p>
+                  <div class="box">
+                      <div class="price">120L.E</div>
+                      <button class="btn">BUY NOW</button>
+      
+                  </div>
+              </div>
+              <!-- the cards end -->
+              <!-- the cards -->
+              <div class="card">
+                  <div class="sale-box">SALE</div>
+                  <div class="img"><img src="../images/product 3.png" alt="product3"></div>
+                  <div class="desc">Clothes</div>
+                  <div class="title">Pharaoh Egypt T-Shirt</div>
+                  <p class="products-desc">
+                      Experience regal style with our 'Pharaoh of Egypt' T-shirt:
+                       a majestic fashion statement.
+                  </p>
+                  <div class="box">
+                      <div class="price">240L.E</div>
+                      <div class="discount-price">320L.E</div> 
+                      <button class="btn">BUY NOW</button>
+      
+                  </div>
+              </div>
+              <!-- the cards end -->
+              <!-- the cards -->
+              <div class="card">
+                  <div class="sale-box">SALE</div>
+                  <div class="img"><img src="../images/product 4.png" alt="product4"></div>
+                  <div class="desc">Statue</div>
+                  <div class="title">Tout ankh amon </div>
+                  <p class="products-desc">
+                      Introducing our 'Tutankhamun Legacy' collectible statue:
+                       a homage to Egypt's iconic pharaoh.
+                  </p>
+                  <div class="box">
+                      <div class="price">380L.E</div>
+                      <div class="discount-price">450 L.E</div> 
+                      <button class="btn">BUY NOW</button>
+      
+                  </div>
+              </div>
+              <!-- the cards end -->
+              <!-- the cards -->
+              <div class="card">
+                  <div class="img"><img src="../images/product 5.png" alt="product5"></div>
+                  <div class="desc">Clothes</div>
+                  <div class="title">Pharaoh dress</div>
+                  <p class="products-desc">
+                      Step into royalty with our 'Pharaoh's Embrace' dress,
+                       a timeless tribute to Egyptian opulence.
+                  </p>
+                  <div class="box">
+                      <div class="price">1020L.E</div>
+                      <button class="btn">BUY NOW</button>
+      
+                  </div>
+              </div>
+              <!-- the cards end -->
+              <!-- the cards -->
+              <div class="card">
+                  <div class="img"><img src="../images/product 6.jpg" alt="product6"></div>
+                  <div class="desc">Accessories</div>
+                  <div class="title">Necklace</div>
+                  <p class="products-desc">
+                      "Elevate your style with our 'Pharaoh's Charm' necklace,
+                       a symbol of timeless allure."
+                  </p>
+                  <div class="box">
+                      <div class="price">50L.E</div>
+                      <button class="btn">BUY NOW</button>
+      
+                  </div>
+              </div>
+              <!-- the cards end -->
+              <!-- the cards -->
+              <div class="card">
+                  <div class="img"><img src="../images/product 7.png" alt="product7"></div>
+                  <div class="desc">Drinkware</div>
+                  <div class="title">Royalty Mug</div>
+                  <p class="products-desc">
+                      Indulge in regal moments with our 'Royalty Mug,'
+                       fit for a modern monarch's collection.
+                      </p>
+                  <div class="box">
+                      <div class="price">85L.E</div>
+                      <button class="btn">BUY NOW</button>
+      
+                  </div>
+              </div>
+              <!-- the cards end -->
+              <!-- the cards -->
+              <div class="card">
+                  <div class="img"><img src="../images/product 8.png" alt="product8"></div>
+                  <div class="desc">Accessories</div>
+                  <div class="title">Photo frame</div>
+                  <p class="products-desc">
+              Capture cherished and timeless memories in royal elegance with our
+              'Pharaoh's Gaze' photo frame.
+                  </p>
+                  <div class="box">
+                      <div class="price">55L.E</div>
+                      <button class="btn">BUY NOW</button>
+      
+                  </div>
+              </div>
+              <!-- the cards end -->
+
+              <div class="card">
+                <div class="img"><img src="../images/product 9.jpg" alt="product9"></div>
+                <div class="desc">Accessories</div>
+                <div class="title">necklace</div>
+                <p class="products-desc">
+                  Imtgar Egyptian Pharaonic Queen Nefertiti Pendant Necklace,
+                   Egyptian Souvenir Jewelry.
+                </p>
+                <div class="box">
+                    <div class="price">90L.E</div>
+                    <button class="btn">BUY NOW</button>
+    
+                </div>
+            </div>
+              
+              
+          </div>
+
+          <div class="buy-form" id="buyForm">
+            <button class="close-btn" onclick="closeForm()">×</button>
+            <h2>Order Details</h2>
+            <form id="orderForm" onsubmit="return validateForm()" >
+
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Rahma" >
+                
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Shaban" >
+                
+                <label for="address">Shipping Address:</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address" >
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your number only 10 digits" >
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com" >
+                
+                <label for="paymentDate">Payment Date:</label>
+                <div class="date-inputs">
+                    <select id="day" name="day" >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                    </select>
+                    <select id="month" name="month" >
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                    <select id="year" name="year" >
+                        <option value="2024">2024</option>
+                    </select>
+                </div>
+                
+                <label for="paymentMethod">Payment Method:</label>
+                <select id="paymentMethod" name="paymentMethod" >
+                    <option value="" disabled selected>Select Payment Method</option>
+                    <option value="cash">Cash</option>
+                    <option value="visa">Visa</option>
+                </select>
+                
+                <button type="submit">Submit Order</button>
+            </form>
+        </div>
+          <div class="pagination">
+              <a href="#" class="pagination-arrow" onclick="showMessage()">&lt;</a>
+              <a href="#" class="pagination-link">1</a>
+              <a href="#" class="pagination-link" onclick="showMessage()">2</a>
+              <a href="#" class="pagination-link" onclick="showMessage()">3</a>
+              <a href="#" class="pagination-arrow" onclick="showMessage()">&gt;</a>
+          </div>
+          
+          
+      </section>
+
+      
+      
+  </main>
+
+  <footer>
+        <div class="footer">
+        <div class="row">
+        <a href="https://web.whatsapp.com/"><i class="whatsapp-icon bx bxl-whatsapp"></i></a>
+        <a href="https://www.facebook.com/"><i class="facebook-icon bx bxl-facebook"></i></a>
+        <a href="https://github.com/"><i class="github-icon bx bxl-github"></i></a>
+        <a href="https://www.instagram.com/"><i class="instagram-icon bx bxl-instagram"></i></a>
+        </div>
+        
+        <div class="row">
+        <ul>
+        <li><a href="contact us.html">Contact us</a></li>
+        <li><a href="../index_2.html">Home page </a></li>
+        <li><a href="FAQ.html">FAQ</a></li>
+        <li><a href="store.html">Shop NOW!</a></li>
+        </ul>
+        </div>
+        
+        <div class="row">
+         Copyright © 2024 FCAI-HU - All rights reserved || Designed By: HI EGYPT team 
+        </div>
+        </div>
+        </footer>
+    <!-- JavaScript -->
+    <script src="../JAVA FILES_2/script.js"></script>
+    <script src="../JAVA FILES_2/store.js"></script>
+
+
+
+  </body>
+</html>

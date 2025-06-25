@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="../css files/registration.css">
+
+
+    <!--icons in the footer-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <!-- -----------------------------------------------------------------------------------------------------
+        -----------------------------------HEADER SECTION-----------------------------------------------------
+        ----------------------------------------------------------------------------------------------------->
+    <header>
+        <nav class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <div class="menu"></div>
+                    <div class="menu"></div>
+                    <div class="menu"></div>
+                </button>
+                <div class="dropdown-content">
+                    <li><a href="../index.html">Egypt</a></li> <!-- Second level menu item with link -->
+                    <li class="li-hidden"><a href="places.html">Where To Go</a></li>
+                    <li class="li-hidden"><a href="hotels.html">Hotels&Stays</a></li>
+                    <li class="li-hidden"><a href="restaurants.html">Restaurants</a></li>
+                    <li class="li-hidden"><a href="transportation.html">Transportation</a></li>
+                    <li><a href="store.html">Buy Now!</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li><a href="faq.html">Frequently Asked Questions</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+
+                </div>
+            </div>
+            <div class="logo_container">
+                <h1>HI<span id="EGYPT">EGYPT</span></h1>
+            </div>
+
+            <div class="page-total">
+
+                <ul class="ul-page-total">
+                    <li><a id="home" href="../index.html">Home</a></li>
+                    <li><a id="places" href="places.html">Where To Go</a></li>
+                    <li><a id="hotels" href="hotels.html">Hotels</a></li>
+                    <li><a id="restaurants" href="restaurants.html">Restaurants</a></li>
+                    <li><a id="transportation" href="transportation.html">Transportation</a></li>
+                    <li><a id="store" href="store.html">Shop Store</a></li>
+
+                </ul>
+
+            </div>
+            
+
+        </nav>
+
+        <a class="theme2-change" href="../HTML FILES_2/registration.html">
+            <button class="theme2-button">Theme2</button>
+        </a>
+        <a class="login-button-a" href="registration.html">
+            <button class="login-button">Log In</button>
+        </a>
+
+    </header>
+    <!-- -----------------------------------------------------------------------------------------------------
+        -----------------------------------Content section-----------------------------------------------------
+        ----------------------------------------------------------------------------------------------------->
+
+
+        <div class="hero">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+                    <button type="button" class="toggle-btn" onclick="Signup()">Register</button>
+                </div>
+    
+                <form id="login" class="input-group" onsubmit="return validateLogin()">
+                    <input type="email" class="input-field" placeholder="Enter your Email" required id="login-email">
+                    <input type="password" class="input-field" placeholder="Enter your password" required id="login-password">
+                    <button type="submit" class="submit-btn">Log in</button>
+                </form>
+    
+                <form id="Signup" class="input-group" onsubmit="return validateSignup()">
+                    <input type="text" class="input-field" placeholder="Enter your Name" required>
+                    <input type="email" class="input-field" placeholder="Enter your Email" required id="signup-email">
+                    <input type="password" class="input-field" placeholder="Enter your password" required id="signup-password">
+                    <button type="submit" class="submit-btn" id="submit">Sign up</button>
+                </form>
+    
+                <div id="message"></div>
+            </div>
+        </div>
+    <!-- -----------------------------------------------------------------------------------------------------
+        -----------------------------------FOOTER SECTION-----------------------------------------------------
+        ----------------------------------------------------------------------------------------------------->
+    <footer>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="footer-row">
+                    <div class="footer-col" id="footer-col-1">
+                        <h4>TRAVEL TO EGYPT</h4>
+                        <hr class="footer-line-col">
+                        <ul>
+                            <li><a href="hotels.html">Hotels</a></li>
+                            <li><a href="restaurants.html">Restaurants</a></li>
+                            <li><a href="transportation.html">Transportation</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col" id="footer-col-2">
+                        <h4>JOIN & BUY</h4>
+                        <hr class="footer-line-col">
+                        <ul>
+                            <li><a href="registration.html">Registration</a></li>
+                            <li><a href="store.html">Buy now</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col" id="footer-col-3">
+                        <h4>NEED HELP?</h4>
+                        <hr class="footer-line-col">
+                        <ul>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="feedback.html">Feedback</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col" id="footer-col-4">
+                        <h4 id="footer-media-title">follow us</h4>
+                        <hr class="footer-line-col" id="footer-line-col-media">
+                        <div class="social-links">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-linkedin"></a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../javascript files/script.js"></script>
+    <script src="../javascript files/registration.js"></script>
+</body>
+
+</html>

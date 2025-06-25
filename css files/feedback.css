@@ -1,0 +1,460 @@
+header{
+  position: sticky;
+  background-color: black;
+}
+body{
+  background-color: #2a4851;
+}
+.myInfo{
+ float: left ;
+ background-color: #1e2021;
+ font-weight: 600;
+ font-size: larger;
+ color: #fff;
+ opacity: .8;
+
+}
+.allpage{
+  text-align: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 650px;
+}
+.headerfeed{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  margin: 50px;
+  height: 500px;
+}
+.inputarea{
+  align-items: center;
+  display: flex;
+  height: 500px;
+  font-size: larger;
+}
+.headerfeed textarea{
+  width: 500px;
+  height: 80%;
+  flex: 1;
+  margin-right:5px;
+}
+.inputarea button {
+  width: 100px;
+  height: 35px;
+  background-color: #ddd;
+  color: #1e2021;
+  border:2px #2a4851 solid;
+  border-radius: 20px;
+  margin-left: 20px;
+  transition: .75s;
+}
+
+.inputarea button:hover {
+  border: 1px solid #e99815; 
+  background-color: #1e2021;
+  color: #FEFAE0;
+  transform: scale(1.1);
+}
+.feedform .title, .container{
+  margin-left: -110px;
+ 
+ }
+ ::placeholder{
+  font-size: xx-large;
+ }
+.related-feedback {
+  display: flex;
+  position: absolute;
+  top: 0;
+  flex-direction: column;
+  right: 0;
+  margin-top:200px ;
+  border: 2px #FFF solid;
+  width: 50%;
+  height: 65%;
+  border-radius: 20px;
+  margin-right: 50px;
+}
+.allpage h1,
+.allpage h2 {
+  color: #1e2021;
+  transition: .75s;
+
+}
+
+.allpage h1:hover,
+.allpage h2:hover {
+  transform: scale(1.1);
+  letter-spacing: 1px;
+  color:#b37718
+
+}
+.feedback-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.feedback-list li{
+  margin-right: 15px;
+}
+  .comment1,
+  .comment2,
+  .comment3 {
+    margin-left: 10px;
+    border: solid;
+    width: 78%;
+    height: 100%;
+    background-color: #1e2021;
+    color: #fff;
+    align-items:center;
+    font-size: large;
+    margin-top: 15px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 10px; 
+  }
+.comment1 img,
+.comment2 img,
+.comment3 img {
+  width: 50px;
+  height: 50px;
+  margin-left: -50px;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-top: -80px;
+}
+
+.comment1 span,
+.comment2 span,
+.comment3 span {
+  display: block;
+  margin-top: 5px;
+}
+.spancom{
+  font-size: larger;
+  font-weight: 800;
+}
+.about_feed{
+padding:7px;
+animation: changeBackground 5s infinite; 
+text-align: center;
+color: white;
+font-size: small;
+font-family:cursive;
+border-top-left-radius: 90%;
+border-bottom-right-radius: 90%;
+border-top-right-radius: 90%;
+border-bottom-left-radius: 90%;
+
+}
+@keyframes changeBackground {
+0% ,100% {
+  background-color: #1e2021; 
+}
+33.33% {
+  background-color: #2a4851; 
+}
+66.66% {
+  background-color: #b37718; 
+}
+}
+
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.rating {
+display: flex;
+flex-direction: row-reverse;
+}
+
+.rating input {
+display: none;
+}
+
+.rating label {
+cursor: pointer;
+width: 40px;
+font-size: 40px;
+color: rgb(166, 164, 164);
+}
+
+.rating label:before {
+content: '★';
+}
+
+.rating input:checked ~ label {
+color: #b37718;
+}
+
+.feedbackText{
+ width:100%;
+ height: 100%;
+  }
+  textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+
+
+    /* CSS styles for full-width thank you message */
+  #thanks {
+    display: none;
+    z-index: 2;
+    font-size:x-large;
+    width: 100vw; 
+    text-align: center; 
+    background-color: #1e2021; 
+    padding: 20px 0; 
+    margin: 0; 
+    position: fixed; 
+    bottom: 0;
+    left: 0; 
+    opacity: 1;
+  }
+    .video_about_egypt{
+      width: 250px;
+      height: 100px;
+      margin-right: 50px;
+    }
+    .audio_about_egypt{
+      width: 238px;
+      height: 50px;
+      margin-top: 50px;
+      margin-right: 30px;
+    }
+
+@media only screen and (max-width: 1200px) {
+  .about_feed h2{
+    font-size: large;
+    }
+
+    .title h1 , .comment1,.comment2,.comment3 {
+    font-size: x-large;
+    }
+    .container .rating{
+    font-size: large;
+    }
+    .headerfeed { 
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 20%;
+    display:flex;
+    margin: 100px;
+    margin-top: 10px;
+    height: 400px;
+  }
+    
+    .inputarea {
+          margin: 0;
+          padding:10px;
+          flex: 1 1 45%;
+          width: 450px;
+          padding-bottom: 0;
+          border-radius: 10px;
+          height: 400px;
+          margin-left: -100px;
+        }
+        .inputarea button{
+          width: 100px;
+          margin-left: -5px;
+          font-size: small;
+          font-weight: 700;
+        }
+
+    .related-feedback {
+      display: flex;
+      position: absolute;
+      top: -80px;
+      flex-direction: column;
+      right: 0;
+      margin-top:200px ;
+      border: 2px #333 solid;
+      width: 45%;
+      height: 70%;
+      margin-right:30px;
+    }
+    
+
+.feedback-list {
+  display: flex;
+  list-style: none; 
+  padding: 2px; 
+}
+.feedback-list li{
+  margin-right: 0px;
+}
+  .comment1,
+  .comment2,
+  .comment3 {
+    margin-left: 5px;
+    border: solid;
+    width: 40%;
+    height: 90%;
+    font-size: small;
+    align-items:center;
+    margin-top: 20px;
+    margin-right: 0;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 15px; 
+  }
+.audio_about_egypt{
+  width: 100px;
+  margin-top: 50px;
+  margin-left: -10px;
+  height: 20px;
+
+}
+.video_about_egypt{
+  width: 100px;
+  margin-left: -15px;
+  height: 50px;
+}
+.comment1 img,
+.comment2 img,
+.comment3 img {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-top: -80px;
+}
+
+.comment1 span,
+.comment2 span,
+.comment3 span {
+  display: block;
+  margin-top: 5px;
+}}
+
+
+@media only screen and (max-width: 850px) {
+
+.about_feed h2{
+  font-size: medium;
+  }
+
+  .title h1 , .comment1,.comment2,.comment3 {
+  font-size: x-large;
+  }
+  .container .rating{
+  font-size: medium;
+  }
+  .headerfeed { 
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 20%;
+  display:flex;
+  margin: 100px;
+  margin-top: 10px;
+  height: 400px;
+}
+  
+  .inputarea {
+        margin: 0;
+        padding:10px;
+        flex: 1 1 45%;
+        width: 450px;
+        padding-bottom: 0;
+        border-radius: 10px;
+        height: 200px;
+        margin-left: -100px;
+        align-items: center;
+      }
+      .inputarea button{
+        width: 80px;
+        font-size: small;
+        font-weight: 700;
+        margin-left:0 ;
+      }
+
+  .related-feedback {
+    display: flex;
+    position: absolute;
+    top: 125px;
+    flex-direction: column;
+    right: 0;
+    margin-top:200px ;
+    border: 2px #333 solid;
+    width: 82%;
+    height: 49%;
+    margin-right:65px;
+  }
+  
+
+.feedback-list {
+display: flex;
+top:3px;
+list-style: none; 
+padding: 2px; 
+}
+.feedback-list li{
+margin-left: -10px;
+}
+.comment1,
+.comment2,
+.comment3 {
+  margin-left: 10px;
+  border: solid;
+  width: 49%;
+  height: 90%;
+  font-size: small;
+  align-items:center;
+  margin-top: -10px;
+  margin-right: 0;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 14px;
+}
+
+.comment1 img,
+.comment2 img,
+.comment3 img {
+width: 40px;
+height: 40px;
+margin-left: 10px;
+border-radius: 50%;
+margin-right: 20px;
+margin-top: -80px;
+}
+
+.comment1 span,
+.comment2 span,
+.comment3 span {
+display: block;
+margin-top: 5px;
+}
+
+.audio_about_egypt{
+  width: 100px;
+  margin-top: 50px;
+  margin-left: -15px;
+  height: 20px;
+
+}
+.video_about_egypt{
+  width: 100px;
+  margin-left: -10px;
+  height: 50px;
+  bottom: -10;
+}
+
+
+
+
+}

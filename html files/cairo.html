@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cairo</title>
+    <link rel="stylesheet" type="text/css" href="fontawesome-5/fontawesome-css/all.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Noto+Sans+SC:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap" rel="stylesheet">    
+<link rel="stylesheet" type="text/css" href="../css files/hotels_filter.css">
+</head>
+<body>
+    <header class="main-header">
+		<nav class="navbar">
+		<div class="dropdown">
+			<button class="dropbtn">
+				<div class="menu"></div>
+				<div class="menu"></div>
+				<div class="menu"></div>
+			</button>
+			<div class="dropdown-content" id="dropdownMenu">
+				<li><a id="home" href="../index.html">Home</a></li>
+				<li><a id="places" href="places.html">Where To Go</a></li>
+				<li><a id="hotels" href="hotels.html">Hotels</a></li>
+				<li><a id="restaurants" href="restaurants.html">Restaurants</a></li>
+				<li><a id="transportation" href="transportation.html">Transportation</a></li>
+				<li><a id="store" href="store.html">Shop Store</a></li>
+				<li><a href="../index.html">Egypt</a></li> <!-- Second level menu item with link -->
+				<li class="li-hidden"><a href="places.html">Where To Go</a></li>
+				<li class="li-hidden"><a href="hotels.html">Hotels&Stays</a></li>
+				<li class="li-hidden"><a href="restaurants.html">Restaurants</a></li>
+				<li class="li-hidden"><a href="transportation.html">Transportation</a></li>
+				<li><a href="store.html">Buy Now!</a></li>
+				<li><a href="registration.html">Registration</a></li>
+				<li><a href="faq.html">Frequently Asked Questions</a></li>
+				<li><a href="feedback.html">Feedback</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+				
+			</div>
+		</div>
+		<div class="logo_container" id="logoContainer">
+			<h1>HI<span id="EGYPT">EGYPT</span></h1>
+		</div>
+		  
+        <a class="theme2-change" href="../HTML FILES_2/cairo.html">
+            <button class="theme2-button">Theme2</button>
+        </a>
+
+        <a class="login-button-a" href="registration.html">
+            <button class="login-button">Log In</button>
+        </a>
+	</nav>
+</header>
+
+<main>
+	
+	<section class="hero" id="home" style="background-image: url('../images/Cairo\ bg.jpg');">
+        <div class="container">
+          <h2 class="h1 hero-title">Explore Cairo</h2>
+		  <div class="btn-group">
+			<a href="#header" class="btn btn-primary">Check now</a>
+		</div>
+		
+        </div>
+      </section>
+
+	  <header class="secondary-header" id="header">
+		<ul class="indicator">
+        <div class="filter-condition">
+            <span>View As a</span>
+            <select name="" id="select">
+                <option value="Default">Default</option>
+                <option value="LowToHigh">Low to high</option>
+                <option value="HighToLow">High to low</option>
+            </select>
+        </div>
+    </header>
+    <div class="product-field">
+        <ul class="items">
+			<li data-category="Hotel"  data-price="$168">
+                <picture>
+                    <img src="../images/CHO - 1.jpg">
+                </picture>
+                <div class="detail">
+                    <strong>Hotel</strong>
+                    <span>Radisson Blu Hotel, 4.4 stars,Lnaguages spoken:
+						English, Arabic</span>
+						<a href="https://www.radissonhotels.com/en-us/hotels/radisson-blu-cairo-heliopolis"><small>Website</small></a>
+					</div>
+                <h4>$168</h4>
+            </li>
+			<li data-category="Hotel" data-price="$200">
+				<picture>
+					<img src="../images/CH-2.jpg">
+				</picture>
+				<div class="detail">
+					<strong>Hotel</strong>
+					<span>Marriott Mena House, 4.6 stars,Languages spoken: English, Arabic</span>
+					<a href="https://www.marriott.com/en-us/hotels/caimn-marriott-mena-house-cairo/overview/"><small>Website</small></a>
+				</div>
+				<h4>$200</h4>
+			</li>
+			<li data-category="Hotel" data-price="180">
+				<picture>
+					<img src="../images/CH-3.jpg">
+				</picture>
+				<div class="detail">
+					<strong>Hotel</strong>
+					<span>Kempinski Nile Hotel, 4.5 stars, Languages spoken: English, Arabic, French</span>
+					<a href="https://www.kempinski.com/en/nile-hotel"><small>Website</small></a>
+				</div>
+				<h4>$180</h4>
+			</li>
+
+			<li data-category="Hotel" data-price="40">
+					<picture>
+						<img src="../images/CH-4.jpg" alt="">
+					</picture>
+					<div class="detail">
+						<strong>Hotel</strong>
+						<span>Pyramids Park Resort, 4.2 stars, Languages spoken: English, Arabic</span>
+						<a href="https://www.tripadvisor.com/Hotel_Review-g294202-d299110-Reviews-Pyramids_Park_Resort_Cairo-Giza_Giza_Governorate.html"><small>Info</small></a>
+					</div>
+					<h4>$40</h4>
+				</li>
+
+			<!--****************************Youth hostels*********************************** --> 
+
+			<li data-category="Youth Hostel" data-price="25">
+				<picture>
+					<img src="../images/CHO - 1.jpg" alt="">
+				</picture>
+				<div class="detail">
+					<strong>Youth Hostel</strong>
+					<span>Freedom Hostel, 4.2 stars, Languages spoken: English, Arabic</span>
+					<a href="https://www.facebook.com/profile.php?id=100057452829886"><small>Page</small></a>
+				</div>
+				<h4>$25</h4>
+			</li>
+
+			<li data-category="Youth Hostel" data-price="15">
+				<picture>
+					<img src="../images/CHO -2.jpg" alt="">
+				</picture>
+				<div class="detail">
+					<strong>Youth Hostel</strong>
+					<span>Freedom Hostel, 4.2 stars, Languages spoken: English, Arabic</span>
+					<a href="https://www.facebook.com/profile.php?id=100057452829886"><small>Page</small></a>
+				</div>
+				<h4>$15</h4>
+			</li>
+
+		</ul>
+    </div>
+</main>
+
+    <!---------------------------------------------------Footer--------------------------------------------------------->
+
+    <footer>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="footer-row">
+                    <div class="footer-col" id="footer-col-1">
+                        <h4>TRAVEL TO EGYPT</h4>
+                        <hr class="footer-line-col">
+                        <ul>
+                            <li><a href="hotels.html">Hotels</a></li>
+                            <li><a href="restaurants.html">Restaurants</a></li>
+                            <li><a href="transportation.html">Transportation</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col" id="footer-col-2">
+                        <h4>JOIN & BUY</h4>
+                        <hr class="footer-line-col">
+                        <ul>
+                            <li><a href="registration.html">Registration</a></li>
+                            <li><a href="store.html">Buy now</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col" id="footer-col-3">
+                        <h4>NEED HELP?</h4>
+                        <hr class="footer-line-col">
+                        <ul>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="feedback.html">Feedback</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="footer-col" id="footer-col-4">
+                        <h4 id="footer-media-title">follow us</h4>
+                        <hr class="footer-line-col" id="footer-line-col-media">
+                        <div class="social-links">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-linkedin"></a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script type="text/javascript" src="../javascript files/Hotel_info.js"></script>
+</body>
+</html>

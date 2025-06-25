@@ -1,0 +1,384 @@
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+     font-size: 1rem;
+     line-height: 1.5;
+     color: #ecf0f1; 
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 0;
+     margin: 0;
+ }
+
+ /*************************************************** Content **********************************************************/
+ .background {
+    background: #2a4851;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 77vh;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ecf0f1;
+}
+
+.centered {
+    max-width: 600px;
+}
+
+.centered h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-input {
+    padding: 10px;
+    width: 500px;
+    height: 60;
+    border: none;
+    border-radius: 20px 0 0 20px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #e99815;
+    color: white;
+    height: 60;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #d78a13;
+}
+
+.section {
+    align-items: center;
+    color: #000000;
+    text-align: center;
+    width: 80%;
+    margin: 5px auto;
+}
+
+.section h2 {
+    font-size: 1rem;
+}
+
+.section p {
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.faq-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.faq-title {
+    font-size: 1.2rem !important;
+}
+
+.faq-list li {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 1rem;
+}
+
+.faq-list p {
+    margin: 0;
+}
+
+.content {
+    padding-bottom: 50px;
+}
+
+.faq-list {
+    align-items: center;
+    --primaryColor: #011f34;
+    --fontColor: #2c3e50;
+    --darkFontColor: #1f2b38;
+    --lightFontColor: #ecf0f1;
+}
+
+.faq-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.faq-list li {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 1rem;
+}
+
+.faq-title {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.faq-title::before {
+    content: "+";
+    margin-right: 1rem;
+}
+
+.faq-trigger {
+    display: none;
+}
+
+.faq-trigger:checked + .faq-title::before {
+    content: "-";
+}
+
+.faq-detail {
+    display: none;
+}
+
+.faq-trigger:checked + .faq-title {
+    color: #c77c13;
+}
+
+.faq-trigger:checked + .faq-title + .faq-detail {
+    display: block;
+}
+
+.faq-title:hover::before {
+    color:rgb(137, 152, 154);
+}
+
+.faq-detail {
+    animation: fadeIn 0.5s ease forwards;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#places h2,
+#transportation h2,
+#hotels h2,
+#museum h2,
+#rules h2 {
+    color: #b37718;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+ #places h4,
+ #transportation h4,
+ #hotels h4,
+ #museum h4,
+ #rules h4 {
+     color: #403b3ba1;
+ }
+ 
+ 
+ @keyframes fadeIn {
+     0% {
+         opacity: 0;
+         transform: translateY(10px);
+     }
+     100% {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+ 
+ .contact-section {
+     padding: 40px;
+     text-align: center;
+     margin-bottom: 30;;
+ }
+ 
+ .block {
+     background-color: #d5cfcf33; 
+     color: #473737; 
+     border-radius: 40px;
+     box-shadow: 0px 0px 20px rgba(99, 50, 50, 0.1); 
+     padding: 40px;
+     max-width: 600px;
+     margin: 0 auto;
+ }
+ 
+ .block p {
+     font-size: 1.5rem;
+     letter-spacing: 1;
+     font-weight: bolder;
+     line-height: 1.6;
+     margin-bottom: 30px;
+ }
+ 
+ .block button {
+     background: linear-gradient(to right, #ff7f00, #ffac51); 
+     color: #ffffff; 
+     padding: 15px 30px;
+     border-radius: 8px;
+     cursor: pointer;
+     font-size: 1.2rem;
+     border: none;
+     transition: background-color 0.3s, color 0.3s;
+ }
+ .block button:hover {
+    background-color: #ffac51;
+    color: #ffffff;
+}
+
+.section {
+    align-items: center;
+    color: #000000;
+    text-align: center;
+    width: 80%;
+    margin: 5px auto;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.faq-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.faq-list li {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 1rem;
+}
+
+.faq-title {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.faq-title::before {
+    content: "+";
+    margin-right: 1rem;
+}
+
+.faq-trigger {
+    display: none;
+}
+
+.faq-trigger:checked + .faq-title::before {
+    content: "-";
+}
+
+.faq-detail {
+    display: none;
+}
+
+.faq-trigger:checked + .faq-title {
+    color: #c77c13;
+}
+
+.faq-trigger:checked + .faq-title + .faq-detail {
+    display: block;
+}
+
+.faq-title:hover::before {
+    color: #757575;
+}
+
+.faq-detail {
+    animation: fadeIn 0.5s ease forwards;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+ 
+ footer{
+    width: 100%;
+ }
+
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 767px){
+   
+    .footer-row{
+        flex-wrap: wrap;
+    }
+  .footer-col{
+    width: 20%;
+    }
+    #footer-col-1{
+        padding-left: 10%;
+        }
+    #footer-col-4{
+        
+        display: contents;
+    }
+    #footer-line-col-media{
+        display: none;
+    }
+    #footer-media-title{
+        margin: 10px 20px 10px 70px;
+        
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .background {
+        height: auto; 
+    }
+
+    .centered {
+        padding: 0 20px; 
+    }
+
+    .search-input {
+        width: 100%; 
+    }
+
+    .search-button {
+        width: 30%; 
+    }
+
+    .faq-title {
+        font-size: 1.2rem; 
+    }
+}
+ @keyframes fadeIn {
+     0% {
+         opacity: 0;
+         transform: translateY(10px);
+     }
+     100% {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }

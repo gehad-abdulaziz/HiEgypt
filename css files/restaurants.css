@@ -1,0 +1,615 @@
+#restaurants{
+  background-color: #e99815;
+  color: white;
+}
+.popup {
+    display: none;
+    color: #1e2021;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: #fff;
+    padding: 40px;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    font-size: 50px; 
+    text-align: center;
+    z-index: 9999;
+  }
+header{
+  position: sticky;
+  background-color: black;
+    margin-bottom:0;
+}
+  body{
+    background-color: #fff;
+  }
+
+
+
+
+
+
+
+ .dropbtn .menu {
+  margin: 0px 0;
+ }
+
+
+
+
+
+
+
+  .myInfo{
+    float: left ;
+    background-color: #1e2021;
+    font-weight: 600;
+    font-size: larger;
+    color: #fff;
+    opacity: .8;
+   
+   }
+   .cover-main {
+    height: 250px;
+    background-image: url('../images/cover\ res.jpg') ;
+    background-size: cover ; 
+    background-position: center; 
+    color: white; 
+    text-align: center; 
+    font-size: xx-large;
+    padding: 50px;
+  
+  }
+
+
+
+
+
+  .list-rest{
+    list-style-type: none;
+    font-size: large;
+    display:flex;
+    justify-content: space-around;
+  }
+
+
+
+
+
+
+
+
+
+
+  .searchForm{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;}
+.searchForm input {
+  width: 350px;
+  height: 40px;
+  border-radius: 25px;
+  margin-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #fff;
+  color: black;
+  font-size:large;
+}
+::placeholder{
+  font-weight: 600;
+}
+
+.searchForm button {
+  margin-left: -10px;
+
+  height: 40px;
+  width: 100px;
+  border-radius: 25px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transition: .5s;
+  color: #1e2021;
+  font-size: large;
+  background-color:rgb(233, 134, 21, .7); 
+}
+
+.searchForm button:hover{
+  transform: scale(1.05);
+  background-color: #2a4851;
+  color: #fff;
+
+}
+.result-box{
+  z-index: 1000;
+    width: 450px;
+    background-color:#ddd ;
+    border-radius: 20px;
+}
+.result-box ul{
+  list-style-type: none;
+  direction: none;
+  margin-top: 1px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.result-box ul li{
+    font-size: 18px;
+    margin-bottom: 0;
+    padding: 10px;
+    font-size: x-large;
+    font-weight: 400;
+    color: #1e2021;
+}
+.result-box ul li:hover{
+    cursor: pointer;
+    
+    background-color: #2a4851;
+}
+
+
+
+
+
+  /*--------------------------------*/
+  .button {
+  font-weight: bold;
+  margin: 10px;
+  width: 120px;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+  border: 2px solid #2a4851;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button:hover {
+  background-color: #2a4851;
+  color: #fff;
+  transform: scale(1.04);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.link {
+  text-decoration: none;
+  transition: 0.75s;
+  color: #2a4851;
+}
+
+.link:hover {
+  transform: scale(1.2);
+  font-size: larger;
+}
+
+
+@media only screen and (max-width: 768px) {
+  button {
+    width: 100%;
+  }
+
+  a {
+    font-size: medium; 
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  a {
+    font-size: small; 
+  }
+}
+
+/*----------------------------------------------------*/
+.headerbuffalo , .headerdesserts , .headercafe, .headerspe{
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  }
+  h2 {
+    font-size: xx-large;
+    transition: .75s;
+    margin-bottom: 10px; 
+  }
+   h2:hover{ 
+    transform: scale(1.1);
+  }
+  h3{
+    font-size: large;
+    text-decoration: underline;
+    transition: .75s;
+    color: #2a4851;
+  }
+   h3:hover {
+  transform: scale(1.02);
+  }
+  
+.buffalo ,.Desserts , .CAFE , .special-dish {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  padding: 10px;
+}
+.paragraph{
+  position: relative;
+ left: 25%;
+ top: 0;
+ font-size: small;
+ margin-left: 27%;
+}
+.contact {
+  font-size: larger;
+  margin: 3px;
+  position: absolute;
+  top: 40%;
+  padding: 10px;
+  left: 0;
+  border: 2px #1e2021 solid;
+  border-radius: 5px 40px 5px 50px;
+}
+
+.places{
+position: absolute;
+margin: 3px;
+display: inline;
+list-style-type: disc;
+ bottom: 0;
+ padding: 10px;
+ width: 90%;
+ border: 2px #1e2021 solid;
+ border-radius: 5px 50px 5px 50px;
+}
+.places-b-laban{
+  position: absolute;
+  margin: 3px;
+   bottom: 0;
+   width: 100%;
+   border: 2px #1e2021 solid;
+   border-radius: 5px 50px 5px 50px;
+  }
+.buf-inner , .des-inner , .caf-inner{
+  display: flex;
+  position: relative;
+  width: 77%;
+  border: solid #1e2021;
+  top:0;
+  left: 0;
+  color: black;
+  height: 830px;
+}
+.buffalo-logo-img img , .des-logo-img  img ,.caf-logo-img  img{
+  position:absolute;
+  left: 0;
+  top: 0;
+  
+  margin: 10px;
+  width: 200px;
+}
+.places li {
+  list-style-type: disc;
+  padding: 8px;
+  display:block;
+  margin-right: 10px;
+  }
+  
+.menu{  
+  display:flex;
+  position: relative;
+  width:25%;
+  border: solid #1e2021;
+  top:0;
+  right:0;
+  height: 830px;
+  margin: 2px;
+}
+.general-food {
+position: absolute;
+display: flex;
+flex-direction: column;
+align-items:center; 
+}
+.food1:hover{
+  background-color: #2a4851;
+  box-shadow: #1e2021;
+}
+.food1 img {
+border:10px #ddd;
+padding: 2px #ddd ;
+size: 50px;
+transition: .75s;
+border-radius: 10px;
+width: 25%;
+display: flex;
+margin: 0 auto 2px; 
+}
+.food1 img:hover{
+transform:scale(1.05);
+}
+.food1 p {
+text-align: center;
+}
+.menu .food1 p{
+  font-size: large;
+}
+.specialdish{
+  margin-bottom: 10px;
+  border: 3px solid #1e2021 ;
+  display:flex;
+  justify-content: space-around;
+}
+.specialdish img{
+  padding: 50px;
+  transition: .75s;
+  border: 2px;
+  width: 150px;
+  border-radius: 20px;
+}
+.specialdish img:hover{
+  transform:scale(1.009);
+
+}
+
+@media only screen and (max-width: 1200px) {
+  .buf-inner, .des-inner, .caf-inner, .menu {
+    width: 100%;
+  }
+  .cover-main h1 , .cover-main h2 {
+    font-size: larger;
+  }
+  .searchForm input {
+    height: 40px;
+    width: 335px;
+    margin-left: -20px;
+     }
+     .searchForm button{
+       width: 70px;
+     }
+
+  .des-logo-img img,
+  .buffalo-logo-img img,
+  .caf-logo-img img {
+    width: 130px;
+  }
+
+  .paragraph-container { 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  .buf-inner p, .des-inner p, .caf-inner p, .menu p {
+    font-size: small;
+
+  }
+  .places{
+margin:1px;
+  }
+.contact{
+  top:30%;
+  font-size: large;
+  width: 20%;
+    padding: 5px;
+    border-radius: 5px; 
+}
+.contact dd{
+  margin: 0;
+}
+.contact a{
+  font-size: large;
+
+}
+
+.menu{
+  align-items: center;
+  width:30%;
+  font-size: large;
+}
+.menu .food1 p {
+  width: 30%;
+  font-size:small;
+  text-align: center;
+}
+.menu .food1 img {
+  width:90px;
+  font-size: x-small;
+}
+.menu .food1 .button {
+font-size: x-small;
+margin-left: 2px;
+  margin: 0;
+  width: 90px;
+  border-radius: 15px;
+  background-color: white;
+  color: black;
+  border: .5px solid #2a4851;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.special-dish {
+  width: 100%;
+  justify-content:center ;
+  font-size:small;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center; 
+}
+
+.special-dish img {
+  width: 130px;
+  height: 130px;
+  margin: 0;
+  padding: 10px;
+  margin-right: 5px;
+  top: 0;
+  display: block;
+}
+
+.special-dish p {
+  margin: 0;
+  font-size: large;
+}
+.special-dish a{
+  font-size:small;
+}
+.special-dish span{
+  font-size: small;
+}
+.special-dish button{
+  font-size: small;
+  margin: 0;
+  width: 110px;
+  border-radius: 15px;
+  background-color: white;
+  color: black;
+  border: .5px solid #2a4851;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+}
+
+@media only screen and (max-width: 720px) {
+  .buf-inner, .des-inner, .caf-inner, .menu {
+    width: 100%;
+  }
+  .cover-main h1 , .cover-main h2 {
+    font-size: small;
+  }
+  
+  .searchForm input {
+ height: 40px;
+ width: 200px;
+ margin-left: -20px;
+  }
+  .searchForm button{
+    width: 50px;
+  }
+  
+  .des-logo-img img,
+  .buffalo-logo-img img,
+  .caf-logo-img img {
+    width: 90px;
+  }
+
+  .paragraph-container { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .buf-inner p, .des-inner p, .caf-inner p, .menu p {
+    font-size: small;
+
+  }
+  .places{
+margin:1px;
+  }
+.contact{
+  top:30%;
+  font-size: small;
+  width: 10%;
+    padding: 5px;
+    border-radius: 5px; 
+}
+.contact dd{
+  margin: 0;
+}
+.contact a{
+  font-size: x-small;
+
+}
+
+.menu{
+  align-items: center;
+  width:15%;
+  font-size: x-small;
+}
+.menu .food1 p {
+  width: 20%;
+  font-size: x-small;
+}
+.menu .food1 img {
+  width: 40px;
+  margin-left: 1px;
+  font-size: x-small;
+}
+
+.menu .food1 .button {
+  font-size: xx-small;
+  margin-left: 2px;
+    margin: 0;
+    width: 50px;
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    border: .5px solid #2a4851;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+.special-dish {
+  width: 100%;
+  justify-content:center ;
+  font-size:x-small small;
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  align-items: center; 
+}
+
+.special-dish img {
+  width:65px;
+  height: 65px;
+  margin: 0;
+  padding: 0;
+  margin-right: 5px;
+  top: 0;
+  display: block;
+}
+
+.special-dish p {
+  margin: 0;
+  font-size: xx-small;
+}
+.special-dish a{
+  font-size: xx-small;
+}
+.special-dish span{
+  font-size: xx-small;
+}
+.special-dish button{
+  font-size: xx-small;
+  margin: 0;
+  width: 80px;
+  border-radius: 15px;
+  background-color: white;
+  color: black;
+  border: .5px solid #2a4851;
+  transition-duration: 0.4s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+
+
+
+
+
+
+}
+.specialdish img:hover{
+  transform: scale(1.09);
+}
+span{
+  color: #1e2021;
+  text-decoration:double;
+  font-weight: 900;
+}

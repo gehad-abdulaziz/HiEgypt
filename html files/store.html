@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="../css files/store.css">
+
+
+    <!--icons in the footer-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>The shop Store</title>
+</head>
+
+<body>
+    <!-- -----------------------------------------------------------------------------------------------------
+        -----------------------------------HEADER SECTION-----------------------------------------------------
+        ----------------------------------------------------------------------------------------------------->
+    <header>
+        <nav class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <div class="menu"></div>
+                    <div class="menu"></div>
+                    <div class="menu"></div>
+                </button>
+                <div class="dropdown-content">
+                    <li><a href="../index.html">Egypt</a></li> <!-- Second level menu item with link -->
+                    <li class="li-hidden"><a href="places.html">Where To Go</a></li>
+                    <li class="li-hidden"><a href="hotels.html">Hotels&Stays</a></li>
+                    <li class="li-hidden"><a href="restaurants.html">Restaurants</a></li>
+                    <li class="li-hidden"><a href="transportation.html">Transportation</a></li>
+                    <li><a href="store.html">Buy Now!</a></li>
+                    <li><a href="registration.html">Registration</a></li>
+                    <li><a href="faq.html">Frequently Asked Questions</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+
+                </div>
+            </div>
+            <div class="logo_container">
+                <h1>HI<span id="EGYPT">EGYPT</span></h1>
+            </div>
+
+            <div class="page-total">
+
+                <ul class="ul-page-total">
+                    <li><a id="home" href="../index.html">Home</a></li>
+                    <li><a id="places" href="places.html">Where To Go</a></li>
+                    <li><a id="hotels" href="hotels.html">Hotels</a></li>
+                    <li><a id="restaurants" href="restaurants.html">Restaurants</a></li>
+                    <li><a id="transportation" href="transportation.html">Transportation</a></li>
+                    <li><a id="store" href="store.html">Shop Store</a></li>
+
+                </ul>
+
+            </div>
+            
+
+        </nav>
+        <a class="theme2-change" href="../HTML FILES_2/store.html">
+            <button class="theme2-button">Theme2</button>
+        </a>
+        <a class="login-button-a" href="registration.html">
+            <button class="login-button">Log In</button>
+        </a>
+    </header>
+
+
+    <section class="content">
+        <h1>Capture memories that last a lifetime</h1>
+        <p>
+            <span style="--i:1">Shop</span>
+            <span style="--i:2">our</span>
+            <span style="--i:3">unique</span>
+            <span style="--i:4">souviners</span>
+            <span style="--i:5">NOW!</span>
+        </p>
+
+        <audio controls autoplay>
+            <source src="../images/Discover treasures .mp3" type="audio/mpeg">
+          </audio>
+
+
+        <button class="shop-now-btn" onclick="scrollToLatestProducts()">Shop Now</button>
+          </section>
+
+          <section class="product-categories">
+            <h2>Product Categories and Availability</h2>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Available Products</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Statue</td>
+                            <td>Tutankhamun Legacy, Isis The God Of Fertility</td>
+                        </tr>
+                        <tr>
+                            <td>Accessories</td>
+                            <td>Key chain, Necklace, Photo frame</td>
+                        </tr>
+                        <tr>
+                            <td>Clothes</td>
+                            <td>Pharaoh Egypt T-Shirt, Pharaoh dress</td>
+                        </tr>
+                        <tr>
+                            <td>Drinkware</td>
+                            <td>Royalty Mug</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    
+    <h1 id="latestProductsHeading" class="pheading">Our latest products</h1>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for products... (E.g :clothes)">
+    </div>
+
+
+    <section class="sec">
+        <div class="products">
+            <!-- the cards -->
+            <div class="card">
+                <div class="img"><img src="../images/product 1.png" alt="product 1"></div>
+                <div class="desc">Statue</div>
+                <div class="title">Isis The God Of Fertility</div>
+                <p class="products-desc">
+                    Evoke Egyptian fertility with our exquisite 'Isis Goddess' figurine,
+                     a divine home adornment.
+                </p>
+                <div class="box">
+                    <div class="price">290L.E</div>
+                    <button class="btn">BUY NOW</button>
+    
+                </div>
+            </div>
+            <!-- the cards end -->
+            <!-- the cards -->
+            <div class="card">
+                <div class="img"><img src="../images/product 2.png" alt="product2"></div>
+                <div class="desc">Accessories</div>
+                <div class="title">Key chain</div>
+                <p class="products-desc">
+                    Elegant and modern Egyptian Pharaonic design key chain
+                     in the shape of Nefertiti (silver-gold).
+                </p>
+                <div class="box">
+                    <div class="price">120L.E</div>
+                    <button class="btn">BUY NOW</button>
+    
+                </div>
+            </div>
+            <!-- the cards end -->
+            <!-- the cards -->
+            <div class="card">
+                <div class="img"><img src="../images/product 3.png" alt="product3"></div>
+                <div class="desc">Clothes</div>
+                <div class="title">Pharaoh Egypt T-Shirt</div>
+                <p class="products-desc">
+                    Experience regal style with our 'Pharaoh of Egypt' T-shirt:
+                     a majestic fashion statement.
+                </p>
+                <div class="box">
+                    <div class="price">240L.E</div>
+                    <button class="btn">BUY NOW</button>
+    
+                </div>
+            </div>
+            <!-- the cards end -->
+            <!-- the cards -->
+            <div class="card">
+                <div class="sale-box">SALE</div>
+                <div class="img"><img src="../images/product 4.png" alt="product4"></div>
+                <div class="desc">Statue</div>
+                <div class="title">Tout ankh amon </div>
+                <p class="products-desc">
+                    Introducing our 'Tutankhamun Legacy' collectible statue:
+                     a homage to Egypt's iconic pharaoh.
+                </p>
+                <div class="box">
+                    <div class="price">380L.E</div>
+                    <div class="discount-price">450 L.E</div> 
+                    <button class="btn">BUY NOW</button>
+    
+                </div>
+            </div>
+            <!-- the cards end -->
+            <!-- the cards -->
+            <div class="card">
+                <div class="sale-box">SALE</div>
+                <div class="img"><img src="../images/product 5.png" alt="product5"></div>
+                <div class="desc">Clothes</div>
+                <div class="title">Pharaoh dress</div>
+                <p class="products-desc">
+                    Step into royalty with our 'Pharaoh's Embrace' dress,
+                     a timeless tribute to Egyptian opulence.
+                </p>
+                <div class="box">
+                    <div class="price">1020L.E</div>
+                    <div class="discount-price">2050L.E</div> 
+                    <button class="btn">BUY NOW</button>
+    
+                </div>
+            </div>
+            <!-- the cards end -->
+            <!-- the cards -->
+            <div class="card">
+                <div class="img"><img src="../images/product 6.jpg" alt="product6"></div>
+                <div class="desc">Accessories</div>
+                <div class="title">Necklace</div>
+                <p class="products-desc">
+                    "Elevate your style with our 'Pharaoh's Charm' necklace,
+                     a symbol of timeless allure."
+                </p>
+                <div class="box">
+                    <div class="price">50L.E</div>
+                    <button class="btn">BUY NOW</button>
+    
+                </div>
+            </div>
+            <!-- the cards end -->
+            <!-- the cards -->
+            <div class="card">
+                <div class="img"><img src="../images/product 7.png" alt="product7"></div>
+                <div class="desc">Drinkware</div>
+                <div class="title">Royalty Mug</div>
+                <p class="products-desc">
+                    Indulge in regal moments with our 'Royalty Mug,'
+                     fit for a modern monarch's collection.
+                    </p>
+                <div class="box">
+                    <div class="price">85L.E</div>
+                    <button class="btn">BUY NOW</button>
+    
+                </div>
+            </div>
+            <!-- the cards end -->
+            <!-- the cards -->
+            <div class="card">
+                <div class="img"><img src="../images/product 8.png" alt="product8"></div>
+                <div class="desc">Accessories</div>
+                <div class="title">Photo frame</div>
+                <p class="products-desc">
+            Capture cherished and timeless memories in royal elegance with our
+            'Pharaoh's Gaze' photo frame.
+                </p>
+                <div class="box">
+                    <div class="price">55L.E</div>
+                    <button class="btn">BUY NOW</button>
+    
+                </div>
+            </div>
+            <!-- the cards end -->
+            
+            
+        </div>
+        <div class="buy-form" id="buyForm">
+            <button class="close-btn" onclick="closeForm()">×</button>
+            <h2>Order Details</h2>
+            <form id="orderForm" onsubmit="return validateForm()" >
+
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Rahma" >
+                
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Shaban" >
+                
+                <label for="address">Shipping Address:</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address" >
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your number only 10 digits" >
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com" >
+                
+                <label for="paymentDate">Payment Date:</label>
+                <div class="date-inputs">
+                    <select id="day" name="day" >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                    </select>
+                    <select id="month" name="month" >
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                    <select id="year" name="year" >
+                        <option value="2024">2024</option>
+                    </select>
+                </div>
+                
+                <label for="paymentMethod">Payment Method:</label>
+                <select id="paymentMethod" name="paymentMethod" >
+                    <option value="" disabled selected>Select Payment Method</option>
+                    <option value="cash">Cash</option>
+                    <option value="visa">Visa</option>
+                </select>
+                
+                <button type="submit">Submit Order</button>
+            </form>
+        </div>
+
+    
+        <div class="pagination">
+            <a href="#" class="pagination-arrow" onclick="showMessage()">&lt;</a>
+            <a href="#" class="pagination-link">1</a>
+            <a href="#" class="pagination-link" onclick="showMessage()">2</a>
+            <a href="#" class="pagination-link" onclick="showMessage()">3</a>
+            <a href="#" class="pagination-arrow" onclick="showMessage()">&gt;</a>
+        </div>
+        
+        
+    </section>
+
+  
+    <!-- -----------------------------------------------------------------------------------------------------
+        -----------------------------------FOOTER SECTION-----------------------------------------------------
+        ----------------------------------------------------------------------------------------------------->
+    <footer>
+        <div class="footer">
+            <div class="footer-container">
+                <div class="footer-row">
+                    <div class="footer-col" id="footer-col-1">
+                        <h4>TRAVEL TO EGYPT</h4>
+                        <hr class="footer-line-col">
+                        <ul>
+                            <li><a href="hotels.html">Hotels</a></li>
+                            <li><a href="restaurants.html">Restaurants</a></li>
+                            <li><a href="transportation.html">Transportation</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col" id="footer-col-2">
+                        <h4>JOIN & BUY</h4>
+                        <hr class="footer-line-col">
+                        <ul>
+                            <li><a href="registration.html">Registration</a></li>
+                            <li><a href="store.html">Buy now</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col" id="footer-col-3">
+                        <h4>NEED HELP?</h4>
+                        <hr class="footer-line-col">
+                        <ul>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="feedback.html">Feedback</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col" id="footer-col-4">
+                        <h4 id="footer-media-title">follow us</h4>
+                        <hr class="footer-line-col" id="footer-line-col-media">
+                        <div class="social-links">
+                            <a href="#" class="fa fa-facebook"></a>
+                            <a href="#" class="fa fa-twitter"></a>
+                            <a href="#" class="fa fa-instagram"></a>
+                            <a href="#" class="fa fa-linkedin"></a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../javascript files/store.js"></script>
+    <script src="../javascript files/script.js"></script>
+</body>
+
+
+</html>

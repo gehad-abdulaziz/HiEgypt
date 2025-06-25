@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+
+  background-image: url(../images/metro.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position:center ;
+background-attachment: fixed;
+
+}.title{
+    color: #af460f;
+    font-size: 45px;
+    
+    }
+/* ==================================================================== */
+.intro-content{
+
+border-radius: 10px;
+padding-left: 10px;
+padding-top: 45px ;
+background-color: rgba(254, 211, 159, 0.8);
+margin-left: 50px;
+margin-top: 95px;
+margin-right: 50px;
+border: 5px solid #af460f;
+z-index: 2;
+}
+.intro-content li{
+    padding-bottom: 6px;
+}
+.p-intro{
+
+    color: #af460f;
+    font-size: 25px;
+}
+.introimg{
+    float:right;  
+ border: 5px solid #af460f;
+ border-radius: 30px;
+ margin-right: 10px;
+margin-bottom: 55px;
+}
+.means li{
+    list-style-position: inside;
+}
+.means li a{
+    color:#af460f;
+font-size: 25px;
+padding-left: 10px;
+list-style-position: inside;
+text-decoration: none;
+font-weight: bold;
+
+}
+/*=========================================================================== */
+#Bus{
+
+background-color: rgba(254, 211, 159, 0.8);
+margin-left: 50px;
+margin-top: 60px;
+color: #af460f;
+font-weight: bold;
+font-size: 30px;
+border: 4px solid #af460f;
+border-radius: 20px;
+padding-top: 15px;
+padding-left: 10px;
+margin-right: 50px;
+}
+.bus-types{
+list-style: inside;
+}
+.imgbus1{
+    display: block;
+  margin-left: auto;
+    border: 5px solid #af460f;
+    border-radius: 25px ;
+    height: 200px   ;
+    margin-right: 30px;
+}
+.bus2{
+    display: block;
+    margin-left: auto;
+    border: 5px solid #af460f;
+    border-radius: 25px ;
+    height: 200px   ;
+    margin-right: 30px;
+}
+.bus4{
+    display: block;
+    margin-left: auto;
+    border: 5px solid #af460f;
+    border-radius: 25px ;
+    height: 200px   ;
+    margin-right: 30px;
+}
+.imgbus3{
+    float: right;
+    margin-left: auto;
+    border: 5px solid #af460f;
+    border-radius: 25px ;
+    height: 200px   ;
+    margin-right: 30px;
+}
+.bus-types2{
+    list-style: inside;
+}
+.travel{
+
+    display: block;
+    margin-left: auto;
+    border: 5px solid #af460f;
+    border-radius: 25px ;
+    height: 200px   ;
+    margin-right: 30px;
+}
+
+#Taxi{
+    background-color: rgba(254, 211, 159,0.8    );
+margin-left: 50px;
+margin-top: 60px;
+color: #af460f;
+font-weight: bold;
+font-size: 30px;
+border: 4px solid #af460f;
+border-radius: 20px;
+padding-top: 15px;
+padding-left: 10px;
+margin-right: 65px;
+}
+.taximg{
+  display: block;
+    margin-left: auto;
+    border: 5px solid #af460f;
+    border-radius: 25px ;
+    height: 200px   ;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+#metro{
+    background-color: rgba(254, 211, 159,0.8    );
+margin-left: 50px;
+margin-top: 60px;
+color: #af460f;
+font-weight: bold;
+font-size: 30px;
+border: 4px solid #af460f;
+border-radius: 20px;
+padding-top: 15px;
+padding-left: 10px;
+margin-right: 65px;
+}
+.metropic{
+
+    display: block;
+    margin-left: auto;
+    border: 5px solid #af460f;
+    border-radius: 25px ;
+    height: 200px   ;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+#Trains{
+    background-color: rgba(254, 211, 159,0.8    );
+    margin-left: 50px;
+    margin-top: 60px;
+    color: #af460f;
+    font-weight: bold;
+    font-size: 30px;
+    border: 4px solid #af460f;
+    border-radius: 20px;
+    padding-top: 15px;
+    padding-left: 10px;
+    margin-right: 65px;    
+}
+.trainpic{
+    display: block;
+    margin-left: auto;
+    border: 5px solid #af460f;
+    border-radius: 25px ;
+    height: 200px   ;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+#planes{
+    background-color: rgba(254, 211, 159,0.8    );
+    margin-left: 50px;
+    margin-top: 60px;
+    color: #af460f;
+    font-weight: bold;
+    font-size: 30px;
+    border: 4px solid #af460f;
+    border-radius: 20px;
+    padding-top: 15px;
+    padding-left: 10px;
+    margin-right: 65px;    
+}
+.planepic{
+     display: block;
+margin-left: auto;
+border: 5px solid #af460f;
+border-radius: 25px ;
+height: 200px   ;
+margin-right: 30px;
+margin-bottom: 10px;
+}
+
+
+
+#myBtn {
+    
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #af460f; 
+    color: #f6eec9;
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+    border: 2px solid black;
+  }
+  
+  #myBtn:hover {
+    background-color: #812f02;
+  }
