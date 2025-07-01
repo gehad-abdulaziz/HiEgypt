@@ -37,8 +37,9 @@ While full responsiveness wasn't required, I made sure the Restaurant page adapt
 - How to build and switch between multiple themes
 - Collaboration and communication within a development team
 - The importance of planning before writing code
+- 
+## see the website from here: https://gehad-abdulaziz.github.io/HiEgypt/
 
 ---
 
 Thanks for checking out my very first project! 
-##see the website from here: https://gehad-abdulaziz.github.io/HiEgypt/
